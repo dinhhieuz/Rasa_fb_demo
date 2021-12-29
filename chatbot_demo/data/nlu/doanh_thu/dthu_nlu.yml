@@ -1,0 +1,9 @@
+version: "2.0"
+
+nlu:
+- intent: ask_dthu
+  examples: |
+    - doanh thu như nào
+    - tôi muốn xem doanh thu
+    - có những loại doanh thu nào
+    - doanh thu

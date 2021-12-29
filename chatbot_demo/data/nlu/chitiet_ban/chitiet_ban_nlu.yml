@@ -1,0 +1,9 @@
+version: "2.0"
+
+nlu:
+- intent: ask_ctiet_ban
+  examples: |
+    - chi tiết bán như nào
+    - tôi muốn xem chi tiết bán
+    - có những loại chi tiết bán nào
+    - chi tiết bán

@@ -1,0 +1,14 @@
+version: "2.0"
+
+stories:
+
+- story: Hello each other
+  steps:
+  - intent: greet
+  - action: act_greet
+
+- story: Bye each other
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+

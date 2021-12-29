@@ -1,0 +1,17 @@
+version: "2.0"
+
+stories:
+- story: seek selling details
+  steps:
+  - intent: ask_ctiet_ban
+  - action: act_ctiet_ban
+
+- story: seek selling details of the stores
+  steps:
+  - intent: ask_ctiet_ban_store
+  - action: act_ctiet_ban_store
+
+- story:  seek request to selling details of the stores
+  steps:
+  - intent: ask_ctiet_ban_store_req
+  - action: act_ctiet_ban_store_req

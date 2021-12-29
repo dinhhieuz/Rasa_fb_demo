@@ -1,0 +1,183 @@
+version: "2.0"
+
+nlu:
+- intent: ask_dthu_time
+  examples: |
+    - Doanh thu theo thời gian
+    - Doanh thu thời gian
+
+- intent: ask_dthu_time_req
+  examples: |
+    - Doanh thu hôm nay như nào?
+    - Doanh thu hôm nay
+    - Doanh thu hôm nay của cửa hàng CH2
+    - Doanh thu ngày ni như nào?
+    - Doanh thu ngày ni
+    - Doanh thu ngày ni của cửa hàng CH2
+    - Doanh thu bửa ni như nào?
+    - Doanh thu bửa ni
+    - Doanh thu bửa ni của cửa hàng CH2
+
+    - Doanh thu tuần này?
+    - Doanh thu tuần này của cửa hàng CH2
+    - Doanh thu tuần trước?
+    - Doanh thu tuần này là bao nhiêu?
+    - Doanh thu tuần này của cửa hàng CH2 là bao nhiêu
+    - Doanh thu tuần này của cửa hàng CH1
+    - Doanh thu tuần này cửa hàng CH1
+    - Doanh thu tuần trước của cửa hàng CH2
+    - Doanh thu thứ 2 tuần này 
+    - Doanh thu thứ 2 tuần này cửa hàng CH1
+    - Doanh thu thứ 2 tuần trước 
+
+    - Doanh thu thứ hai tuần này
+    - Doanh thu thứ hai tuần này cửa hàng CH1
+    - Doanh thu thứ hai tuần trước
+
+    - Doanh thu thứ 3 tuần này
+    - Doanh thu thứ 3 tuần này của cửa hàng CH2
+    - Doanh thu thứ 3 tuần trước
+
+    - Doanh thu thứ ba tuần này
+    - Doanh thu thứ ba tuần này của cửa hàng CH2
+    - Doanh thu thứ ba tuần trước
+
+    - Doanh thu thứ 4 tuần này
+    - Doanh thu thứ 4 tuần này của cửa hàng CH2
+    - Doanh thu thứ 4 tuần trước
+
+    - Doanh thu thứ tư tuần này
+    - Doanh thu thứ tư tuần này của cửa hàng CH2
+    - Doanh thu thứ tư tuần trước
+
+    - Doanh thu thứ 5 tuần này
+    - Doanh thu thứ 5 tuần này của cửa hàng CH2
+    - Doanh thu thứ 5 tuần trước
+
+    - Doanh thu thứ năm tuần này
+    - Doanh thu thứ năm tuần này của cửa hàng CH2
+    - Doanh thu thứ năm tuần trước
+
+    - Doanh thu thứ 6 tuần này
+    - Doanh thu thứ 6 tuần này của cửa hàng CH2
+    - Doanh thu thứ 6 tuần trước
+
+    - Doanh thu thứ sau tuần này
+    - Doanh thu thứ sau tuần này của cửa hàng CH2
+    - Doanh thu thứ sau tuần trước
+
+    - Doanh thu tháng này?
+    - Doanh thu tháng ni?
+    - Doanh thu tháng này của cửa hàng CH3
+    - Doanh thu tháng trước?
+    - Doanh thu tháng trước cửa hàng CH1
+
+    - Doanh thu năm nay?
+    - Doanh thu năm nay của cửa hàng CH1
+    - Doanh thu năm trước?
+    - Doanh thu năm trước của cửa hàng CH3
+    - Doanh thu năm vừa rồi?
+    - Doanh thu năm vừa rồi của cửa hàng CH3
+
+    - Doanh thu ngày 21/03/2021 là bao nhiêu
+    - Doanh thu ngày 21/12/2021 của cửa hàng ch3 là bao nhiêu
+    - Doanh thu ngày 23/11/2020 của cửa hàng ch3
+    - Doanh thu từ 21/03/2021 đến 21/05/2021 của cửa hàng ch1 là bao nhiêu?
+    - Doanh thu từ 21/03/2021 tới 21/05/2021 là bao nhiêu?
+    - Doanh thu từ 21/03/2021 tới 21/05/2021
+ 
+
+
+    - So sánh doanh thu cửa hàng CH1 và cửa hàng CH2
+    - Doanh thu cửa hàng CH3 với CH2
+    - So sánh Doanh thu cửa hàng CH1 so với cửa hàng CH2
+    - Doanh thu cửa hàng CH1 với cửa hàng CH3
+    - Doanh thu của cửa hàng CH1 so với Ch2 là bao nhiêu
+    - So sánh Doanh thu cửa hàng CH1 và CH3
+
+    - Doanh thu hôm nay của cửa hàng CH1 và CH3 như nào?
+    - Doanh thu hôm nay của cửa hàng CH1 so với Ch2
+    - Doanh thu hôm nay của cửa hàng CH2 và cửa hàng CH2
+    - Doanh thu ngày ni cửa hàng CH3 với CH2 như nào?
+    - Doanh thu ngày ni cửa hàng CH3 với CH2
+    - Doanh thu ngày ni của cửa hàng CH3 với CH2
+    - Doanh thu bửa ni của cửa hàng CH1 so với Ch2 là như nào?
+    - Doanh thu bửa ni của cửa hàng CH1 so với Ch2 là bao nhiêu
+    - Doanh thu bửa ni của cửa hàng CH2 và CH2
+
+    - Doanh thu tuần này cửa hàng CH2 và CH2?
+    - Doanh thu tuần này của cửa hàng CH1 so với Ch2 
+    - Doanh thu tuần trước ở cửa hàng CH1 so với Ch2 là?
+    - Doanh thu tuần này cửa hàng CH1 và CH3 là bao nhiêu?
+    - Doanh thu tuần này của cửa hàng CH1 và CH3 là bao nhiêu
+    - Doanh thu tuần này của cửa hàng CH1 và CH3
+    - Doanh thu tuần này cửa hàng CH1 và CH3
+    - Doanh thu tuần trước của cửa hàng CH1 và CH3
+    - Doanh thu thứ 2 tuần này của cửa hàng CH1 so với Ch2
+    - Doanh thu thứ 2 tuần này cửa hàng CH1 và Ch2 là nhiêu?
+    - Doanh thu thứ 2 tuần trước cửa hàng CH1 so với Ch2
+
+    - Doanh thu thứ hai tuần này của cửa hàng CH1 với Ch2
+    - Doanh thu thứ hai tuần này cửa hàng CH1 và CH3
+    - Doanh thu thứ hai tuần trước cửa hàng CH1 so với Ch2
+
+    - Doanh thu thứ 3 tuần này của cửa hàng CH1 và Ch2
+    - Doanh thu thứ 3 tuần này cửa hàng CH2 và cửa hàng Ch2
+    - Doanh thu thứ 3 tuần trước của cửa hàng CH1 và Ch2
+
+    - Doanh thu thứ ba tuần này của cửa hàng CH1 và Ch2
+    - Doanh thu thứ ba tuần này của cửa hàng CH2 và Ch3
+    - Doanh thu thứ ba tuần trước của cửa hàng CH1 và Ch2
+
+    - Doanh thu thứ 4 tuần này của cửa hàng CH1 và cửa hàng Ch2
+    - Doanh thu thứ 4 tuần này của cửa hàng CH2 và cửa hàng Ch2
+    - Doanh thu thứ 4 tuần trước ở cửa hàng Ch2 và CH2 
+
+    - Doanh thu thứ tư tuần này của cửa hàng CH2 và cửa hàng Ch2
+    - Doanh thu thứ tư tuần này của cửa hàng CH2
+    - Doanh thu thứ tư tuần trước của cửa hàng CH2 và cửa hàng Ch2
+
+    - Doanh thu thứ 5 tuần này của cửa hàng CH2 và cửa hàng Ch2
+    - Doanh thu thứ 5 tuần này của cửa hàng CH2 và Ch2
+    - Doanh thu thứ 5 tuần trước của cửa hàng CH2 và cửa hàng Ch2
+
+    - Doanh thu thứ năm tuần này của cửa hàng CH2 và cửa hàng Ch2
+    - Doanh thu thứ năm tuần này của cửa hàng CH2 và Ch2
+    - Doanh thu thứ năm tuần trước của cửa hàng CH2 và cửa hàng Ch2
+
+    - Doanh thu thứ 6 tuần này cửa hàng CH2 và cửa hàng Ch2
+    - Doanh thu thứ 6 tuần này của cửa hàng CH1 và Ch2
+    - Doanh thu thứ 6 tuần trước của cửa hàng CH2 và Ch3
+
+    - Doanh thu thứ sau tuần này của cửa hàng CH2 và Ch2
+    - Doanh thu thứ sau tuần này của cửa hàng CH2 và cửa hàng CH3
+    - Doanh thu thứ sau tuần trước với cửa hàng CH2 và Ch2
+
+    - Doanh thu tháng này cửa hàng CH2 so với Ch2? 
+    - Doanh thu tháng ni với cửa hàng CH2 so với Ch2?
+    - Doanh thu tháng này của cửa hàng CH3 và CH2
+    - Doanh thu tháng trước của cửa hàng CH3 so sánh với CH2 ?
+    - Doanh thu tháng trước cửa hàng CH1 so với CH2 ?
+
+    - Doanh thu năm nay ở cửa hàng CH1 so với CH2 ?
+    - Doanh thu năm nay của cửa hàng CH1 và cửa hàng Ch2
+    - Doanh thu năm trước ở cửa hàng Ch1 và CH2?
+    - Doanh thu năm trước của cửa hàng CH3 và Ch2
+    - Doanh thu năm vừa rồi với cửa hàng CH1 và cửa hàng CH2?
+    - Doanh thu năm vừa rồi của cửa hàng CH3 so với cửa hàng Ch2
+
+    - Doanh thu ngày 21/03/2021 ở cửa hàng ch1 và ch2 là bao nhiêu
+    - Doanh thu ngày 21/12/2021 của cửa hàng ch3 và cửa hàng ch2 là bao nhiêu
+    - Doanh thu ngày 23/11/2020 của cửa hàng ch3 và ch2
+    - Doanh thu từ 21/03/2021 đến 21/05/2021 của cửa hàng ch1 và cửa hàng ch2 là bao nhiêu?
+    - Doanh thu từ 21/03/2021 tới 21/05/2021 cửa hàng ch1 và ch2 là bao nhiêu?
+    - Doanh thu từ 21/03/2021 tới 21/05/2021 với cửa hàng ch1 và ch2 là nhiu
+
+# - intent: ask_dthu_items
+#   examples: |
+#     - Doanh thu mặt hàng sạn
+#     - Doanh thu mặt hàng về xi măng
+#     - Doanh thu về mặt hàng kệ sách
+    
+
+  

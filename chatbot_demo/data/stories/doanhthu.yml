@@ -1,0 +1,28 @@
+version: "2.0"
+
+stories:
+
+- story: category revenue
+  steps:
+  - intent: ask_dthu
+  - action: act_dthu
+
+- story: category revenue time
+  steps:
+  - intent: ask_dthu_time
+  - action: act_dthu_time
+
+- story: category revenue time request
+  steps:
+  - intent: ask_dthu_time_req
+  - action: act_dthu_time_req
+
+- story: category revenue store
+  steps:
+  - intent: ask_dthu_store
+  - action: act_dthu_store
+
+- story: category revenue store request
+  steps:
+  - intent: ask_dthu_store_req
+  - action: act_dthu_store_req

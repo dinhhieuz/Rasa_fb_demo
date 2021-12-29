@@ -1,0 +1,44 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+
+  - ask_dthu
+  - ask_dthu_time
+  - ask_dthu_time_req
+  - ask_dthu_store
+  - ask_dthu_store_req
+
+  - ask_ctiet_ban
+  - ask_ctiet_ban_store
+  - ask_ctiet_ban_store_req
+responses:
+  # utter_greet:
+  # - text: "Xin chào bạn, rất vui được nói chuyện với bạn tôi có thể giúp gì cho bạn?"
+
+  utter_goodbye:
+  - text: "Tạm biệt, chúc bạn một ngày tốt lành <3"
+  # utter_cheer_up:
+  # - text: "Here is something to cheer you up:"
+  #   image: "https://i.imgur.com/nGF1K8f.jpg"
+
+
+session_config:
+  session_expiration_time: 60
+# Thời gian phiên làm việc của Chatbot
+  carry_over_slots_to_new_session: true
+
+actions:
+  - act_greet
+  - act_unknown
+
+  - act_dthu
+  - act_dthu_time
+  - act_dthu_time_req
+  - act_dthu_store
+  - act_dthu_store_req
+  
+  - act_ctiet_ban
+  - act_ctiet_ban_store
+  - act_ctiet_ban_store_req

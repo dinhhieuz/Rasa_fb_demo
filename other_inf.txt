@@ -1,0 +1,10 @@
+Acess Token:
+EAADVxr4ZBEVIBAN4tX4msWKI3YZC5jgE6qb0rTBDtLHGSBNOIOgbOY5vDDjvz6goDXwlpnYQUSZCmlmQ8tZAIfgML2N5ps0tSyAFgvOvg8NxHhpwrB4AxNUkYTa2Ew18mrrUqSqZAwGgeH2gw3k1d6x0phmyj1AZABAosmj01S6shZAZA6FT1O8C
+
+Secret App:
+66bcf54764faf7b01d94c8640166aedd
+
+version 
+    - Rasa: 2.8.3
+    - python: 3.7.7
+    - underthesea: 1.1.9 

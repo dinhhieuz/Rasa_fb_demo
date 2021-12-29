@@ -1,0 +1,23 @@
+version: "2.0"
+
+nlu:
+- intent: ask_ctiet_ban_time
+  examples: |
+    - Chi tiết bán theo thời gian
+    - Tôi muốn xem chi tiết bán theo thời gian
+    - chi tiết bán theo thông tin thời gian
+    - Chi tiết bán thời gian
+
+
+- intent: ask_ctiet_ban_time_req
+  examples: |
+    - Chi tiết bán hàng trong năm nay
+    - Tôi muốn xem chi tiết bán hàng theo năm trước
+    - Chi tiết bán hàng trong năm ni
+    - Chi tiết bán trong tháng nay
+    - Chi tiết bán trong tháng trước
+    - Chi tiết bán trong tháng vừa rồi
+    - Tôi muốn xem chi tiết bán trong tuần ni
+    - Tôi muốn xem chi tiết bán trong các tuần trước
+    - Chi tiết bán trong tuần vừa rồi
+    - Chi tiết bán hàng trong tuần trước

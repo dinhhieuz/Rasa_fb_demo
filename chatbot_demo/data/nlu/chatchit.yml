@@ -1,0 +1,41 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - chào
+    - chào bạn
+    - chào bot
+    - helu 
+    - xin chào
+    - êy
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - bye
+    - bai
+    - cút
+    - biến
+    - bái bai
+    - bai bai
+    - see you later
+    - good bye
+    - tạm biệt bot
+    - tạm biệt nha
+    - vĩnh biệt
+    - chào tạm biệt
+    
+  
