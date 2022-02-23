@@ -22,7 +22,8 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
+    - hi bạn lâu ngày quá
+    
 - intent: goodbye
   examples: |
     - bye
@@ -38,4 +39,26 @@ nlu:
     - vĩnh biệt
     - chào tạm biệt
     
-  
+- intent: ask_dashboard
+  examples: |
+    - Dashboard dùng để test
+
+- intent: positive
+  examples: |
+    - Hay lắm
+    - Tốt quá
+    - Giỏi quá
+    - Được quá bot ơi
+    - ok
+    - tuyệt vời
+    - hay
+    
+- intent: negative
+  examples: |
+    - tệ quá
+    - chán bot quá
+    - chán thật sự
+    - dở quá
+    - kém thật sự
+    - sai tùm lum
+    - thất vọng quá

@@ -6,12 +6,30 @@ stories:
   - intent: ask_ctiet_ban
   - action: act_ctiet_ban
 
+#!-----------------------------------------
 - story: seek selling details of the stores
   steps:
   - intent: ask_ctiet_ban_store
   - action: act_ctiet_ban_store
 
-- story:  seek request to selling details of the stores
+
+#!-------------------------------------
+
+# - story:  seek request to selling details of the stores
+#   steps:
+#   - intent: ask_ctiet_ban_store_req
+#   - action: act_ctiet_ban_store_req
+
+- story:  seek request to selling details of the stores - positive
   steps:
   - intent: ask_ctiet_ban_store_req
   - action: act_ctiet_ban_store_req
+  - intent: positive
+  - action: utter_positive
+
+- story:  seek request to selling details of the stores - negative
+  steps:
+  - intent: ask_ctiet_ban_store_req
+  - action: act_ctiet_ban_store_req
+  - intent: negative
+  - action: utter_negative

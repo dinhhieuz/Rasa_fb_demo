@@ -3,6 +3,8 @@ version: "2.0"
 intents:
   - greet
   - goodbye
+  - positive
+  - negative
 
   - ask_dthu
   - ask_dthu_time
@@ -13,6 +15,20 @@ intents:
   - ask_ctiet_ban
   - ask_ctiet_ban_store
   - ask_ctiet_ban_store_req
+
+  - ask_dashboard
+
+# slots:
+#   u_permission:
+#     type: text
+#     initial_value: null
+#     influence_conversation: False
+
+#   u_l_name:
+#     type: text
+#     initial_value: 'bạn'
+#     influence_conversation: False
+
 responses:
   # utter_greet:
   # - text: "Xin chào bạn, rất vui được nói chuyện với bạn tôi có thể giúp gì cho bạn?"
@@ -22,7 +38,18 @@ responses:
   # utter_cheer_up:
   # - text: "Here is something to cheer you up:"
   #   image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_loading:
+  - text: "Loading..."
 
+  utter_positive:
+  - text: Cảm ơn bạn :3
+  - text: Hihi cảm ơn này :3
+  - text: Cảm ơn này :3
+
+  utter_negative:
+  - text: Nếu không hài lòng thì cho mình xin lũi nha :( 
+  - text: Tiết quá, cho mình xin lũi nha :(
+  - text: Bạn bỏ quá cho mình, mình xin lũi nha :(
 
 session_config:
   session_expiration_time: 60
@@ -32,6 +59,7 @@ session_config:
 actions:
   - act_greet
   - act_unknown
+  # - act_sendRasa
 
   - act_dthu
   - act_dthu_time
@@ -42,3 +70,8 @@ actions:
   - act_ctiet_ban
   - act_ctiet_ban_store
   - act_ctiet_ban_store_req
+
+  - act_ctiet_ban_time
+  - act_ctiet_ban_time_req
+
+  - act_dashboard

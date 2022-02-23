@@ -72,12 +72,23 @@ nlu:
     - Doanh thu tháng trước?
     - Doanh thu tháng trước cửa hàng CH1
 
+    - Doanh thu của quý 2
+    - Tôi muốn xem doanh thu quý một là bao nhiêu
+    - Doanh thu của quý 2 cửa hàng CH1
+    - Doanh thu của quý Bốn năm ni bao nhiêu
+    - Doanh thu của quý 1 năm trước của cửa hàng là nhiu
+
     - Doanh thu năm nay?
     - Doanh thu năm nay của cửa hàng CH1
     - Doanh thu năm trước?
     - Doanh thu năm trước của cửa hàng CH3
     - Doanh thu năm vừa rồi?
     - Doanh thu năm vừa rồi của cửa hàng CH3
+
+    - Doanh thu ngày 1 tháng 2 năm 2021 của cửa hàng Ch1, Ch2 
+    - Doanh thu trong ngày 1 tháng 2 cửa hàng Ch1, Ch2 
+    - Doanh thu trong ngày 3 cửa hàng Ch1 so với Ch2 
+    
 
     - Doanh thu ngày 21/03/2021 là bao nhiêu
     - Doanh thu ngày 21/12/2021 của cửa hàng ch3 là bao nhiêu

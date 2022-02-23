@@ -12,3 +12,12 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
+- story: dashboard test
+  steps:
+  - intent: ask_dashboard
+  - action: act_dashboard
+
+- story: don't get intent user and bot fallback
+  steps:
+  - intent: nlu_fallback
+  - action: act_unknown

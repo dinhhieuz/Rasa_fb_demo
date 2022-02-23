@@ -1,0 +1,50 @@
+[
+  {
+    "text": "Doanh thu cửa hàng CH3 với CH2",
+    "intent": "ask_dthu_store_req",
+    "intent_prediction": {
+      "name": "ask_dthu_time_req",
+      "confidence": 0.4842733144760132
+    }
+  },
+  {
+    "text": "So sánh Doanh thu cửa hàng CH1 so với cửa hàng CH2",
+    "intent": "ask_dthu_store_req",
+    "intent_prediction": {
+      "name": "ask_dthu_time_req",
+      "confidence": 0.6046509742736816
+    }
+  },
+  {
+    "text": "So sánh doanh thu cửa hàng CH1 và cửa hàng CH2",
+    "intent": "ask_dthu_time_req",
+    "intent_prediction": {
+      "name": "ask_dthu_store_req",
+      "confidence": 0.49115321040153503
+    }
+  },
+  {
+    "text": "Doanh thu cửa hàng CH1 với cửa hàng CH3",
+    "intent": "ask_dthu_time_req",
+    "intent_prediction": {
+      "name": "ask_dthu_store_req",
+      "confidence": 0.5469216704368591
+    }
+  },
+  {
+    "text": "Doanh thu của cửa hàng CH1 so với Ch2 là bao nhiêu",
+    "intent": "ask_dthu_time_req",
+    "intent_prediction": {
+      "name": "ask_dthu_store_req",
+      "confidence": 0.5824835300445557
+    }
+  },
+  {
+    "text": "So sánh Doanh thu cửa hàng CH1 và CH3",
+    "intent": "ask_dthu_time_req",
+    "intent_prediction": {
+      "name": "ask_dthu_store_req",
+      "confidence": 0.53840172290802
+    }
+  }
+]

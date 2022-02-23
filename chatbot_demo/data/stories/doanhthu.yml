@@ -12,17 +12,46 @@ stories:
   - intent: ask_dthu_time
   - action: act_dthu_time
 
-- story: category revenue time request
+# - story: category revenue time request
+#   steps:
+#   - intent: ask_dthu_time_req
+#   - action: act_dthu_time_req
+
+- story: category revenue time request - positive
   steps:
   - intent: ask_dthu_time_req
   - action: act_dthu_time_req
+  - intent: positive
+  - action: utter_positive
 
+- story: category revenue time request - negative
+  steps:
+  - intent: ask_dthu_time_req
+  - action: act_dthu_time_req
+  - intent: negative
+  - action: utter_negative
+
+#!-------------------------------
 - story: category revenue store
   steps:
   - intent: ask_dthu_store
   - action: act_dthu_store
 
-- story: category revenue store request
+# - story: category revenue store request
+#   steps:
+#   - intent: ask_dthu_store_req
+#   - action: act_dthu_store_req
+
+- story: category revenue store request - positive
   steps:
   - intent: ask_dthu_store_req
   - action: act_dthu_store_req
+  - intent: positive
+  - action: utter_positive
+
+- story: category revenue store request - negative
+  steps:
+  - intent: ask_dthu_store_req
+  - action: act_dthu_store_req
+  - intent: negative
+  - action: utter_negative

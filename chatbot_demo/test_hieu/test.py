@@ -61,10 +61,11 @@ def dthu_get_param (text_result):
     return req, original_time, error
             
 req, original_time, error = dthu_get_param(text)
-print(req)
+
 for item in req[2]:
     item = None if item == '~' else item
-    print(item)
+
+print(req)
     # df = DB_TAU.GET_TAU(('doanh_thu', req[0], req[1], req[2]))
 
     # if df["sum_dthu"][0] != None:
@@ -73,3 +74,5 @@ for item in req[2]:
     #         text_result = f'Doanh thu là: {num:,}'
 
     # print(text_result)
+
+

@@ -13,5 +13,134 @@ nlu:
     - Xem chi tiết bán của cửa hàng CH1
     - Chi tiết bán của cửa hàng CH2
     - Thông tin chi tiết bán của cửa hàng CH3
-  
+    - Chi tiết bán của cửa hàng CH2 năm nay
+    - Chi tiết bán của cửa hàng CH2 năm trước
+    - Xem chi tiết bán của cửa hàng CH3 tháng này
+    - Xem Chi tiết bán của cửa hàng CH1 cho tháng trước
+    - Chi tiết bán của cửa hàng CH1 cho tuần này
+    - Chi tiết bán của cửa hàng CH2 tuần trước
+
+    - Tôi muốn xem chi tiết bán cửa hàng ch1
+    - Xem chi tiết bán cửa hàng CH2
+    - chi tiết bán cửa hàng CH2 là bao nhiêu?
+    - chi tiết bán cửa hàng CH3 nhiêu?
+
+    - chi tiết bán cửa hàng CH1 hôm nay
+    - chi tiết bán cửa hàng CH2 ngày ni
+    - chi tiết bán cửa hàng CH3 bửa ni
+    - chi tiết bán cửa hàng CH1 hôm nay như nào?
+    - chi tiết bán cửa hàng CH1 hôm nay
+    - chi tiết bán của cửa hàng CH2 hôm nay 
+
+    - chi tiết bán cửa hàng CH2 thứ 2 tuần này
+    - chi tiết bán cửa hàng CH1 thứ hai tuần trước
+    - chi tiết bán cửa hàng CH2 thứ 3 tuần trước
+    - chi tiết bán cửa hàng CH3 thứ ba tuần này
+    - chi tiết bán cửa hàng CH1 thứ 4 tuần này
+    - chi tiết bán cửa hàng CH2 thứ tư tuần trước
+    - chi tiết bán cửa hàng CH3 thứ 5 tuần trước
+    - chi tiết bán cửa hàng CH2 thứ năm tuần này
+    - chi tiết bán cửa hàng CH3 thứ 6 tuần này
+    - chi tiết bán cửa hàng CH1 thứ sau tuần trước
+    - chi tiết bán cửa hàng CH3 thứ 7 tuần trước
+    - chi tiết bán cửa hàng CH1 thứ bảy tuần này
+    - chi tiết bán cửa hàng CH3 chủ nhật tuần trước
+    - chi tiết bán cửa hàng CH1 CN tuần này
+    
+    - chi tiết bán cửa hàng CH1 trong tuần nay
+    - chi tiết bán cửa hàng CH2 trong tuần trước
+    - chi tiết bán của cửa hàng CH3 trong tuần này
+    - chi tiết bán cửa hàng CH1 tuần vừa rồi
+    - chi tiết bán cửa hàng CH2 của tuần này 
+    - chi tiết bán cửa hàng CH2 tuần này?
+    - chi tiết bán của cửa hàng CH2 tuần này 
+    - chi tiết bán cửa hàng CH2 tuần trước?
+    - chi tiết bán cửa hàng CH2 tuần này là bao nhiêu?
+    - chi tiết bán của cửa hàng CH2 tuần này là bao nhiêu
+    - chi tiết bán cửa hàng CH1 tuần này 
+    - chi tiết bán của cửa hàng CH2 tuần trước 
+
+    - chi tiết bán cửa hàng CH2 tháng này?
+    - chi tiết bán cửa hàng CH2 tháng trước
+
+    - chi tiết bán cửa hàng Ch1 quý 1 năm trước
+    - chi tiết bán của cửa hàng ch2 của quý bố
+
+    - chi tiết bán cửa hàng CH3 năm nay?
+    - chi tiết bán của cửa hàng CH2 năm này
+    - chi tiết bán của cửa hàng CH1 năm trước
+    - chi tiết bán của cửa hàng CH1 năm vừa rồi?
+    - chi tiết bán cửa hàng CH1 năm trước
+    
+    - Xem chi tiết bán cửa hàng Ch1 ngày 1 tháng 5 năm 2021 đến nay
+    - Xem chi tiết bán cửa hàng ch1 tháng 5 đến bây giờ
+    - Xem chi tiết bán của cửa hàng Ch1 năm 2021 đến bây giờ
+
+    - chi tiết bán của cửa hàng ch3 ngày 21/12/2021 là bao nhiêu
+    - chi tiết bán cửa hàng ch3 ngày 23/11/2020
+    - chi tiết bán của cửa hàng ch1 từ 21/03/2021 đến 21/05/2021 là bao nhiêu?
+    - chi tiết bán cửa hàng ch1 từ 21/03/2021 đến 21/05/2021 là bao nhiêu?
+    - chi tiết bán cửa hàng ch1 từ 21/03/2021 đến 21/05/2021
+
+    - Xem chi tiết bán của cửa hàng Ch1, Ch2 ngày 1 tháng 2 năm 2021
+    - Xem chi tiết bán cửa hàng Ch1, Ch2 trong ngày 1 tháng 2
+    - Xem chi tiết bán cửa hàng Ch1 so với Ch2 trong ngày 3
+    
+
+    - So sánh chi tiết bán cửa hàng CH1 và cửa hàng CH2
+    - chi tiết bán cửa hàng CH3 với CH2
+    - So sánh chi tiết bán cửa hàng CH1 so với cửa hàng CH2
+    - chi tiết bán cửa hàng CH1 với cửa hàng CH3
+    - chi tiết bán của cửa hàng CH1 so với Ch2 là bao nhiêu
+    - So sánh chi tiết bán cửa hàng CH1 và CH3
+
+    - So sánh chi tiết bán cửa hàng CH1 với cửa hàng CH3 hôm nay
+    - chi tiết bán cửa hàng CH1 và CH3 ngày ni
+    - chi tiết bán cửa hàng CH3 so với Ch2 bửa ni
+    - chi tiết bán cửa hàng CH1 và cửa hàng CH2 hôm nay như nào?
+    - So sánh chi tiết bán cửa hàng CH3 với CH2 hôm nay
+    - chi tiết bán của cửa hàng CH1 với cửa hàng CH3 hôm nay 
+
+    - chi tiết bán cửa hàng CH1 với cửa hàng CH3 thứ 2 tuần này
+    - chi tiết bán cửa hàng CH1 và CH3 thứ hai tuần trước
+    - So sánh chi tiết bán cửa hàng CH3 so với Ch2 thứ 3 tuần trước
+    - chi tiết bán cửa hàng CH1 với cửa hàng CH3 thứ ba tuần này
+    - chi tiết bán cửa hàng CH1 và CH3 với cửa hàng CH3 thứ 4 tuần này
+    - chi tiết bán cửa hàng CH3 so với Ch2 thứ tư tuần trước
+    - chi tiết bán cửa hàng CH1 với cửa hàng CH3 thứ 5 tuần trước
+    - So sánh chi tiết bán cửa hàng CH1 với cửa hàng CH3 thứ năm tuần này
+    - chi tiết bán cửa hàng CH1 với cửa hàng CH3 thứ 6 tuần này
+    - chi tiết bán cửa hàng CH1 và CH3 thứ sau tuần trước
+    - chi tiết bán cửa hàng CH3 so với Ch2 thứ 7 tuần trước
+    - chi tiết bán cửa hàng CH1 với cửa hàng CH3 thứ bảy tuần này
+    - So sánh chi tiết bán cửa hàng CH1 và CH3 chủ nhật tuần trước
+    - chi tiết bán cửa hàng CH3 so với Ch2 CN tuần này
+    
+    - chi tiết bán cửa hàng CH1 và CH3 trong tuần nay
+    - chi tiết bán cửa hàng CH2 với cửa hàng CH3 trong tuần trước
+    - chi tiết bán của cửa hàng CH1 và CH3 trong tuần này
+    - So sánh chi tiết bán cửa hàng CH1 và CH3 tuần vừa rồi
+    - chi tiết bán cửa hàng CH2 so với cửa hàng CH2 của tuần này 
+    - chi tiết bán cửa hàng CH2 với cửa hàng CH3 tuần này?
+    - chi tiết bán của cửa hàng CH1 và CH3 tuần này 
+    - chi tiết bán cửa hàng CH2 so với cửa hàng CH2 tuần trước?
+    - chi tiết bán cửa hàng CH2 với cửa hàng CH3 tuần này là bao nhiêu?
+    - So sánh chi tiết bán của cửa hàng CH1 và CH3 tuần này là bao nhiêu
+    - chi tiết bán cửa hàng CH1 so với cửa hàng CH2 tuần này 
+    - chi tiết bán của cửa hàng CH2 với cửa hàng CH3 tuần trước 
+
+    - So sánh chi tiết bán cửa hàng CH2 với CH1 tháng này?
+    - chi tiết bán cửa hàng CH2 so với cửa hàng CH3 tháng trước
+
+    - chi tiết bán cửa hàng CH3 và CH2 trong năm nay?
+    - chi tiết bán của cửa hàng CH2 và cửa hàng CH3 năm này
+    - So sánh chi tiết bán của cửa hàng CH1 so với CH1 ở năm trước
+    - chi tiết bán của cửa hàng CH1 với CH3 năm vừa rồi?
+    - chi tiết bán cửa hàng CH1 và CH2 ở năm trước
+
+    - So sánh chi tiết bán của cửa hàng ch3 so với CH2 ngày 21/12/2021 là bao nhiêu
+    - chi tiết bán cửa hàng ch3 và Ch1 ở ngày 23/11/2020
+    - chi tiết bán của cửa hàng ch1 và cửa hàng Ch3 từ 21/03/2021 đến 21/05/2021 là bao nhiêu?
+    - So sánh chi tiết bán cửa hàng ch1 so với cửa hàng CH1 từ 21/03/2021 đến 21/05/2021 là bao nhiêu?
+    - chi tiết bán cửa hàng ch1 với CH3 từ 21/03/2021 đến 21/05/2021
   

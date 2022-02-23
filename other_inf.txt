@@ -1,10 +1,25 @@
-Acess Token:
-EAADVxr4ZBEVIBAN4tX4msWKI3YZC5jgE6qb0rTBDtLHGSBNOIOgbOY5vDDjvz6goDXwlpnYQUSZCmlmQ8tZAIfgML2N5ps0tSyAFgvOvg8NxHhpwrB4AxNUkYTa2Ew18mrrUqSqZAwGgeH2gw3k1d6x0phmyj1AZABAosmj01S6shZAZA6FT1O8C
-
-Secret App:
-66bcf54764faf7b01d94c8640166aedd
-
-version 
+version:
     - Rasa: 2.8.3
     - python: 3.7.7
     - underthesea: 1.1.9 
+    - pygithub: 1.55
+    - dataframe_image: 0.1.1
+    - matplotlib: 3.4.2
+
+    - SpeechRecognition: 3.8.1
+    - moviepy: 1.0.3
+    - gTTS: 2.2.3
+    
+comand conda:
+    conda install -c conda-forge firefox geckodrive (bỏ)
+
+note: 
+    - Sữ dụng xampp (Xampp\apache\conf\httpd.conf) -> find: DocumentRoot, listen: đổi thành kho image
+    {
+        path old:
+            DocumentRoot "D:/HieuCali/File of Hieu/Software/Xampp/htdocs"
+            <Directory "D:/HieuCali/File of Hieu/Software/Xampp/htdocs">
+    }
+    - Tăng time request:
+        1. D:\HieuCali\File of Hieu\Software\Anaconda\envs\envChatBot\Lib\site-packages\rasa\core\channels\console.py
+        2. Tới biến "DEFAULT_STREAM_READING_TIMEOUT_IN_SECONDS": change time

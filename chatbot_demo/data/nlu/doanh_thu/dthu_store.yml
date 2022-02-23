@@ -51,6 +51,15 @@ nlu:
     - Doanh thu cửa hàng CH2 tháng này?
     - Doanh thu cửa hàng CH2 tháng trước
 
+    - Doanh thu cửa hàng Ch1 và Ch2 trong quý một năm nay
+    - Doanh thu cửa hàng Ch1 trong quý 1 năm trước
+    - Doanh thu cửa hàng Ch3 trong quý 4 năm nay
+
+    - Doanh thu của cửa hàng Ch1, Ch2 ngày 1 tháng 2 năm 2021
+    - Doanh thu cửa hàng Ch1, Ch2 trong ngày 1 tháng 2
+    - Doanh thu cửa hàng Ch1 so với Ch2 trong ngày 3
+    
+
     - Doanh thu cửa hàng CH3 năm nay?
     - Doanh thu của cửa hàng CH2 năm này
     - Doanh thu của cửa hàng CH1 năm trước
