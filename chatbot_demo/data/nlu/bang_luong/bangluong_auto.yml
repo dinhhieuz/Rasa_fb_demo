@@ -1,0 +1,37 @@
+version: "2.0"
+nlu:
+- intent: ask_salary_auto
+  examples: |
+    - bảng lương tự động
+    - Có bảng lương chưa
+    - Tôi có lương tháng này chưa
+    - khi nào tôi nhận được lương
+    - Cho xem bảng lương
+    - nhận bảng lương tháng này
+    - bảng lương tháng ni bao nhiêu
+    - Cho tôi xem bảng lương đi
+    - lương của tôi đâu rồi
+    - lương của tôi tháng này đâu rồi
+    - tôi có lương chưa
+    - gữi cho tôi xem bảng lương với
+    - Tôi muốn đăng kí lương tự động
+    - đăng kí lương tự động
+    - làm sao để đăng kí lương tự động
+    
+
+- intent: ask_salary_auto_send
+  examples: |
+    - đăng ký gữi tự động lương
+    - đăng ký gữi tự động lương | 7089066037755021622
+    - đăng ký gữi tự động lương | 6498498459845985984
+
+- intent: ask_insert_salary_demo
+  examples: |
+    - insert table salary to demo
+    - insert table salary to demo for custome
+
+
+- intent: ask_insert_salary_demo_zalo
+  examples: |
+    - Nhập lương ZALO cho nhân viên để demo
+    - Nhập lương ZALOO cho nhân viên để demo

@@ -1,0 +1,8 @@
+version: "2.0"
+nlu:
+- intent: ask_salary
+  examples: |
+    - Danh sách bảng lương
+    - Tôi muốn trợ giúp bảng lương
+    - Tôi có thể sữ dụng trợ giúp bảng lương nào
+    - Tôi muốn hổ trợ thông tin bảng lương

@@ -18,6 +18,15 @@ intents:
 
   - ask_dashboard
 
+  - ask_salary
+  - ask_salary_auto
+  - ask_insert_salary_demo_zalo
+  - ask_insert_salary_demo
+  
+  - ask_salary_auto_send
+  
+
+
 # slots:
 #   u_permission:
 #     type: text
@@ -75,3 +84,11 @@ actions:
   - act_ctiet_ban_time_req
 
   - act_dashboard
+
+  - act_salary
+  - act_salary_auto
+  - act_salary_auto_send
+  - act_insert_salary_demo_zalo
+  - act_insert_salary_demo
+  
+  

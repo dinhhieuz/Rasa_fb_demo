@@ -9,4 +9,15 @@ db_name = "test_chatbot"
 uid = "sa"
 pwd = "hieuvippro123"
 
+
+# host = 'localhost'
+# port = '1433'
+# server_name = "dsa-server"
+# db_name = "test_chatbot"
+# uid = "sa"
+# pwd = "Dsa@12345"
+
+
+
+
 DB_TAU = Data_TAU(host, port, server_name, db_name, uid, pwd)

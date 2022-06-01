@@ -1,7 +1,6 @@
 version:
-    - Rasa: 2.8.3
-    - python: 3.7.7
-    - underthesea: 1.1.9 
+    - Rasa: 2.8.13
+    - python: 3.8.10
     - pygithub: 1.55
     - dataframe_image: 0.1.1
     - matplotlib: 3.4.2
@@ -9,7 +8,8 @@ version:
     - SpeechRecognition: 3.8.1
     - moviepy: 1.0.3
     - gTTS: 2.2.3
-    
+    - html2image: 2.0.1
+    - sqlmlutils: 1.1.0 (Để install packages SQL machine)
 comand conda:
     conda install -c conda-forge firefox geckodrive (bỏ)
 
@@ -23,3 +23,15 @@ note:
     - Tăng time request:
         1. D:\HieuCali\File of Hieu\Software\Anaconda\envs\envChatBot\Lib\site-packages\rasa\core\channels\console.py
         2. Tới biến "DEFAULT_STREAM_READING_TIMEOUT_IN_SECONDS": change time
+        
+    - Tăng số lượng người:
+        1. D:\HieuCali\File of Hieu\Software\Anaconda\envs\envChatBot\Lib\site-packages\rasa\constants.py
+        2. tới biến " DEFAULT_SANIC_WORKERS " : change number user
+
+    - Debug Ngrok:
+        1. ngrok http 5005 --log=stdout.log (Xuất lên màng hình)
+        2. ngrok http 5005 --log=stdout.log > tên file (lưu trong file)
+
+    - install feature python in Sqlserver
+        https://galileo.ba/en/development-en/sql-server-machine-learning-services-ubuntu-20-04-installation/
+

@@ -10,13 +10,15 @@
 # from _typeshed import NoneType
 from ast import Pass
 from email import message
-from re import S
+from re import L, S
 from typing import Any, Text, Dict, List
-from MySQLdb import Date
+# from MySQLdb import Date
 from matplotlib.pyplot import text
+from pyrsistent import b
 
-from rasa_sdk.events import FollowupAction, SlotSet
+from rasa_sdk.events import FollowupAction, SlotSet, ReminderScheduled
 from rasa_sdk import Action, Tracker
+
 from rasa_sdk.executor import CollectingDispatcher
 
 import gc
@@ -71,7 +73,6 @@ class act_greet(Action):
 
         print('[%s] <- %s' % (self.name(), tracker.latest_message['text']))
         # profile_user = inf_user(tracker.sender_id)
-        print(tracker.sender_id)
         
         button = []
         # Phân quyền
@@ -88,11 +89,11 @@ class act_greet(Action):
                     "title": "Chi tiết bán",
                     "payload": "Có những loại chi tiết bán nào"
                 }) 
-                button.append({
-                    "type": "postback",
-                    "title": "Dashboard test",
-                    "payload": "Dashboard dùng để test"
-                })
+                # button.append({
+                #     "type": "postback",
+                #     "title": "Dashboard test",
+                #     "payload": "Dashboard dùng để test"
+                # })
             else:
                 if 'act_dthu' in user.act_permission:
                     button.append({
@@ -106,12 +107,17 @@ class act_greet(Action):
                         "title": "Chi tiết bán",
                         "payload": "Có những loại chi tiết bán nào"
                     }) 
-                if 'act_dashboard' in user.act_permission: 
-                    button.append({
-                        "type": "postback",
-                        "title": "Dashboard test",
-                        "payload": "Dashboard dùng để test"
-                    })
+                # if 'act_dashboard' in user.act_permission: 
+                #     button.append({
+                #         "type": "postback",
+                #         "title": "Dashboard test",
+                #         "payload": "Dashboard dùng để test"
+                #     })
+            button.append({
+                "type": "postback",
+                "title": "Bảng lương",
+                "payload": "Tôi muốn trợ giúp bảng lương"
+            })
         
         text = "Xin chào {} 👋👋👋 \nRất vui được nói chuyện với bạn, tôi có thể giúp gì cho bạn nào? ".format(user.l_name)
         if len(button) != 0: text + '\nĐây là những gợi ý' 
@@ -333,7 +339,7 @@ class act_dthu_store_req(Action):
                             
                             # if result_git == 1:
                             #     URL_img_table = f'https://raw.githubusercontent.com/dinhhieuz/Rasa_fb_demo/master/{name_img_table}'
-                            URL_img_table = iteracv_GitHub.public_image(path = '/ChatBox_RASA/dsa_demo_sell_materia/', name = name_img_table )
+                            URL_img_table = iteracv_GitHub.public_image(path = '/', name = name_img_table )
                             check = True
                         else:
                             db_result = 'Không tìm thấy cửa hàng'
@@ -504,7 +510,7 @@ class act_ctiet_ban_store_req(Action):
                             name_img = "assets/" + "chitiet_ban_" + "{:%Y-%m-%d_%Hh-%Mm-%Ss}".format(now)+".png"
                             result_merge = iteracv_GitHub.merge_image_2(imgs = [f'../{name_img_table}', f'../{name_img_chart}'], name_img = name_img)
                             # URL_img = ''
-                            URL_img = iteracv_GitHub.public_image(path = '/ChatBox_RASA/dsa_demo_sell_materia/', name = name_img )
+                            URL_img = iteracv_GitHub.public_image(path = '/', name = name_img )
                             # URL_img_table = iteracv_GitHub.public_image(path = '/ChatBox_RASA/dsa_demo_sell_materia/', name = name_img_table )
                             # URL_img_chart = iteracv_GitHub.public_image(path = '/ChatBox_RASA/dsa_demo_sell_materia/', name = name_img_chart )
 
@@ -616,6 +622,164 @@ class act_dashboard(Action):
         gc.collect()
         return []
 
+
+#!------------------------------------------- SALARY -----------------------------------
+''' List option of bảng lương '''
+class act_salary(Action):
+    def name(self) -> Text:
+        return "act_salary"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        print('[%s] <- %s' % (self.name(), tracker.latest_message['text']))
+        now = datetime.datetime.now()
+        button = [
+            {
+                "type":"postback",
+                "title":f"⭐ Đăng kí gửi lương ({now.month}/{now.year})",
+                "payload": "bảng lương tự động"
+            },
+            {
+                "type":"postback",
+                "title":"Nhập lương ZALO",
+                "payload":"Nhập lương ZALO cho nhân viên để demo"
+            },
+            {
+                "type":"postback",
+                "title":"Nhập bảng lương (demo)",
+                "payload":"insert table salary to demo"
+            },
+            # {
+            #     "type":"postback",
+            #     "title":"📞 Liên hệ nhân sự",
+            #     "payload":" Liên hệ phòng nhân sự"
+            # },
+            # {
+            #     "type":"postback",
+            #     "title":"chính sách",
+            #     "payload": "chính sách bảng lương"
+            # }
+        ]
+
+        dispatcher.utter_message(
+            text = "Gọi ý thông tin lương cá nhân có thể là:"
+            , buttons = button
+        )
+
+        del button, now
+        gc.collect()
+
+        return []
+
+''' Auto send salary to staff'''
+class act_salary_auto(Action):
+    def name(self) -> Text:
+        return "act_salary_auto"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # logs contents
+        print('[%s] <- %s' % (self.name(), tracker.latest_message['text']))
+        Row_count = DB_TAU.SALARY((tracker.sender_id), check_otp=True)
+        #-> Check có mã hay chưa
+        if Row_count > 0:
+            dispatcher.utter_message(text="Bạn đã đăng kí bảng lương cho tháng này :) hãy đăng kí lại sau nhá")
+        else:
+            res = {
+                "attachment": {
+                    "type": "template",
+                    "payload": {
+                        "template_type": "one_time_notif_req",
+                        "title": "Đăng ký gữi",
+                        "payload": "đăng ký gữi tự động lương"
+                    }
+                }
+            }
+            dispatcher.utter_message(json_message=res)
+            del res
+        # schedule = datetime.datetime.now() + datetime.timedelta(minutes=1)
+        # dispatcher.utter_message(text= 'Bạn sẽ nhận được lương sau 1p nữa')
+        # ReminderScheduled(
+        #             intent_name='ask_salary_auto_send', 
+        #             trigger_date_time = schedule, 
+        #             name = 'salary_auto:' + str(schedule), 
+        #             kill_on_user_message=True)
+        del Row_count
+        gc.collect()
+        return []
+
+''' Registered to Auto send salary to staff'''
+class act_salary_auto_send(Action):
+    def name(self) -> Text:
+        return "act_salary_auto_send"
+
+    async def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # logs contents
+        print('[%s] <- %s' % (self.name(), tracker.latest_message['text']))
+        # Lấy mã token
+        token_notif = tracker.latest_message['text'].split(' | ')[1]
+        # Đăng kí trong database
+        Row_count = DB_TAU.SALARY((tracker.sender_id, token_notif))
+        # Kiểm tra đăng kí có thành công không
+        if Row_count == -1:
+            dispatcher.utter_message(text="Đăng ký thất bại :( \nVui lòng thử lại!!!")
+            FollowupAction('act_salary_auto')
+        elif Row_count == 0:
+            dispatcher.utter_message(text="Bạn đã đăng kí bảng lương cho tháng này :) hãy đăng kí lại sau nhá")
+        else:
+            dispatcher.utter_message(text="Đăng ký thành công <3 \nChúng tôi sẽ thông báo lương cho bạn vào tháng tới, hãy đợi nhé!!!")
+        
+        # đăng ký gữi tự động lương | 7089066037755021622
+        del token_notif, Row_count
+        gc.collect()
+        return []
+
+
+'''Create data row in table to demo with customer'''
+class act_insert_salary_demo(Action):
+    def name(self) -> Text:
+        return "act_insert_salary_demo"
+
+    async def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        print('[%s] <- %s' % (self.name(), tracker.latest_message['text']))
+        # dispatcher.utter_message(text="Thêm bảo lương mẫu thành công\n bảng lương sẽ được gữi cho bạn khi đã đăng kí")
+        
+        # Lấy mã token
+        # Đăng kí trong database
+        Row_count = DB_TAU.SALARY((), insert_demo= True)
+
+        del Row_count
+        gc.collect()
+        return [] 
+
+class act_insert_salary_demo_zalo(Action):
+    def name(self) -> Text:
+        return "act_insert_salary_demo_zalo"
+
+    async def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        print('[%s] <- %s' % (self.name(), tracker.latest_message['text']))
+        # dispatcher.utter_message(text="Thêm bảo lương mẫu thành công\n bảng lương sẽ được gữi cho bạn khi đã đăng kí")
+        
+        # Lấy mã token
+        # Đăng kí trong database
+        Row_count = DB_TAU.SALARY((tracker.sender_id), insert_demo_zalo= True)
+        dispatcher.utter_message(text = 'Hãy check bảng lương tự động tại zalo của bạn !!')
+
+        del Row_count
+        gc.collect()
+        return [] 
+
 #!------------------------------------------- FALL BACK --------------------------------
 
 ''' Fall Back '''
@@ -655,7 +819,7 @@ class act_unknown(Action):
 
                     # Check if the conversion(chuyển đổi) is successful
                     if check == True:
-                        URL_audio = iteracv_GitHub.public_audio(path='/ChatBox_RASA/dsa_demo_sell_materia/chatbot_demo/assets/audio/', name = name_audio)
+                        URL_audio = iteracv_GitHub.public_audio(path='/chatbot_demo/assets/audio/', name = name_audio)
                         message = {
                                     "attachment": {
                                         "type": "audio",

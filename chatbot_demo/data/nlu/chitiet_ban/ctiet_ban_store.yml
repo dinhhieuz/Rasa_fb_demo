@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: ask_ctiet_ban_store
   examples: |
@@ -8,7 +7,7 @@ nlu:
     - chi tiết bán theo thông tin cửa hàng
     - Chi tiết bán cửa hàng
 
-- intent: ask_ctiet_ban_store_req
+- intent: ask_ctiet_ban_store_req 
   examples: |
     - Xem chi tiết bán của cửa hàng CH1
     - Chi tiết bán của cửa hàng CH2

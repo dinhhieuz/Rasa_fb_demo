@@ -19,7 +19,7 @@ rasa run --endpoints endpoints.yml --credentials credentials.yml --cor '*' --deb
 # nhầm mục đích trách bị xung đội trong quá trình gữi Port API với nhau
 pushd D:\HieuCali\File of Hieu\Project\DSA Company\Project\ChatBox_RASA\dsa_demo_sell_materia\chatbot_demo
 conda activate envchatbot
-rasa run -m models --endpoints endpoints.yml --port 5002 --credentials credentials.yml
+rasa run -m models --endpoints endpoints_voice.yml --port 7007 --credentials credentials.yml
 
 #!-----------------------------------
 #4---- Run Ngrok

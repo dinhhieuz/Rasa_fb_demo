@@ -1,0 +1,9 @@
+t=2022-03-10T09:14:25+0700 lvl=info msg="no configuration paths supplied"
+t=2022-03-10T09:14:25+0700 lvl=info msg="ignoring default config path, could not stat it" path=/home/dsa-server/.ngrok2/ngrok.yml err="stat /home/dsa-server/.ngrok2/ngrok.yml: no such file or directory"
+t=2022-03-10T09:14:25+0700 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2022-03-10T09:14:26+0700 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2022-03-10T09:14:26+0700 lvl=info msg="client session established" obj=csess id=ba785130b751
+t=2022-03-10T09:14:26+0700 lvl=info msg="started tunnel" obj=tunnels name="command_line (http)" addr=http://localhost:5005 url=http://3702-117-2-120-199.ngrok.io
+t=2022-03-10T09:14:26+0700 lvl=info msg="started tunnel" obj=tunnels name=command_line addr=http://localhost:5005 url=https://3702-117-2-120-199.ngrok.io
+t=2022-03-10T09:15:01+0700 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2022-03-10T09:15:01+0700 lvl=info msg="session closing" obj=tunnels.session err=nil

@@ -20,19 +20,35 @@ class Connect_SQLServer:
         df = pd.DataFrame.from_records(results, columns=cols)
         return df
 
-    def Call_Procedure(self, proc):
+    def RowCount_Data(self, cursor):
+        '''Đếm số dòng kết quả bảng''' 
+        cursor.fetchall()
+        return cursor.rowcount
+
+    def Call_Procedure(self, proc, check_insert=False):
         '''Kết nối đến CSDL và thực thi Procedure'''
-        # Connect SQL + Python
+        # Connect SQL + Python        
         conn = pymssql.connect(host=self.host, port=self.port, server=self.server, user=self.uid, password=self.pw, database=self.database)
         # Tạo cursor bởi connect
         cursor = conn.cursor()
         # Thực hiện chạy proc dựa trên cursor
         cursor.execute(proc)
+        # Nếu dùng để update data thì commit
+        if check_insert == True:
+            conn.commit()
+            return cursor.rowcount
+        # cursor.close()
+        # conn.close()
         return cursor
 
 
     def convert_params(self, params):
         r = []
-        for val in params:
-            r.append('NULL') if val is None else r.append("N'"+val+"'")
+        
+        if type(params) == tuple:
+            for val in params:
+                r.append('NULL') if val is None else r.append("N'"+val+"'")
+        if type(params) == str:
+            r.append("N'"+params+"'")
+
         return r

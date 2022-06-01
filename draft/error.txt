@@ -1,0 +1,4 @@
+1. 
+    -> tensorflow.python.framework.errors_impl.AlreadyExistsError: Another metric with the same name already exists.
+    -> Nguyên nhân: 1 phần gói keras k tương thích với tensorflow
+    -> Fix: với tensorflow 2.6.1 -> Pip install keras==2.6.0 

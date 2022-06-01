@@ -1,0 +1,30 @@
+version: "2.0"
+
+stories:
+
+- story: Ask for menu salary
+  steps:
+    - intent: ask_salary
+    - action: act_salary
+
+- story: Ask for monthly salary
+  steps:
+    - intent: ask_salary_auto
+    - action: act_salary_auto
+
+- story: Avoid send automation salary
+  steps:
+    - intent: ask_salary_auto_send
+    - action: act_salary_auto_send
+
+- story: Create date sample to demo with customer
+  steps:
+    - intent: ask_insert_salary_demo
+    - action: act_insert_salary_demo
+
+- story: Create data sample to demo at zalo
+  steps:
+    - intent: ask_insert_salary_demo_zalo
+    - action: act_insert_salary_demo_zalo
+
+
